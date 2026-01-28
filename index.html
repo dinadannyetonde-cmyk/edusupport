@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EduSupport - Soutien scolaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EduSupport</h1>
+    <p>Soutien scolaire pour étudiants en ingénierie</p>
+    <input type="text" id="search" placeholder="Rechercher : C, génie civil, électronique...">
+</header>
+
+<section class="filters">
+    <select id="niveau">
+        <option value="">Choisir le niveau</option>
+        <option value="1">1ère année</option>
+        <option value="2">2e année</option>
+        <option value="3">3e année</option>
+    </select>
+
+    <select id="filiere" style="display:none;">
+        <option value="">Choisir la filière</option>
+        <option value="genie informatique">Génie Informatique</option>
+        <option value="genie civil">Génie Civil</option>
+        <option value="electronique">Électronique</option>
+    </select>
+</section>
+
+<section id="quiz-container"></section>
+
+<footer>
+    <p>Projet académique - ENSPD</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
