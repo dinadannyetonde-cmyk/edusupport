@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduSupport - Soutien Scolaire</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background: linear-gradient(to right, #74ebd5, #ACB6E5); margin:0; padding:0;}
+    header { background:#4A90E2; color:white; padding:20px; text-align:center; font-size:2em; font-weight:bold;}
+    .controls { margin:20px; text-align:center;}
+    select, input[type=text] { padding:10px; margin:5px; border-radius:5px; border:1px solid #ccc; }
+    .quiz { background:white; margin:20px auto; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); max-width:800px;}
+    h3 { color:#4A90E2;}
+    button { padding:10px 20px; border:none; background:#4A90E2; color:white; font-weight:bold; border-radius:5px; cursor:pointer; margin-top:10px;}
+    button:hover { background:#357ABD;}
+    .score { font-weight:bold; color:#27AE60; margin-top:10px;}
+    .correction { background:#f1f1f1; padding:10px; border-radius:5px; margin-top:10px;}
+</style>
+</head>
+<body>
+<header>Bienvenue sur EduSupport</header>
+
+<div class="controls">
+    <label for="niveau">Niveau :</label>
+    <select id="niveau">
+        <option value="">-- Sélectionner le niveau --</option>
+        <option value="1">1ère Année</option>
+        <option value="2">2ème Année</option>
+        <option value="3">3ème Année</option>
+        <option value="4">4ème Année</option>
+        <option value="5">5ème Année</option>
+    </select>
+
+    <label for="filiere" id="label-filiere" style="display:none;">Filière :</label>
+    <select id="filiere" style="display:none;">
+        <option value="">-- Sélectionner la filière --</option>
+        <option value="genie civil">Génie Civil</option>
+        <option value="genie electrique">Génie Électrique / Systèmes Intelligents</option>
+        <option value="informatique">Informatique & Télécommunications</option>
+        <option value="mecanique">Mécanique</option>
+        <option value="energetique">Énergétique & Procédés</option>
+        <option value="automobile">Automobile & Mécatronique</option>
+        <option value="maritime">Maritime & Portuaire</option>
+        <option value="qhse">Qualité, Hygiène, Sécurité & Environnement (QHSE)</option>
+    </select>
+
+    <input type="text" id="search" placeholder="Rechercher une matière...">
+</div>
+
+<div id="quiz-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
